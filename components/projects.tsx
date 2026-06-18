@@ -69,7 +69,7 @@ const projects = [
     id: 6,
     title: 'The Box Giftery',
     description: 'A Shopify eCommerce store developed for The Box Giftery, a gifting brand focused on creating memorable and personalized gift experiences. The project emphasized a seamless customer journey, making it easy for shoppers to discover products, build custom gift bundles, and complete purchases with minimal friction.One of the key challenges was the migration from the Easy Orders platform, including domain transfer and ensuring a smooth transition to Shopify while preserving the brand\'s online presence. The store was optimized to provide a user-friendly shopping experience, intuitive navigation, and flexible bundle-building capabilities that encourage customers to create thoughtful, customized gifts.',
-    image: '/projects/shopify/theBoxGiftery.png',
+    image: '/projects/shopify/theBoxgiftery.png',
     category: 'Shopify',
     technologies: ['Shopify Plus', 'Liquid', 'GraphQL', 'Hydrogen'],
     // github: 'https://github.com',

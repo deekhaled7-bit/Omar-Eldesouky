@@ -65,8 +65,10 @@ export function Contact() {
           </p>
         </motion.div>
 
-        <div className="max-w-5xl mx-auto">
-          <div className="grid lg:grid-cols-2 gap-12 lg:gap-16">
+        {/* Contact form hidden for now */}
+        {false && (
+          <div className="max-w-5xl mx-auto">
+            <div className="grid lg:grid-cols-2 gap-12 lg:gap-16">
             {/* Contact Form */}
             <motion.div
               initial={{ opacity: 0, x: -40 }}
@@ -221,6 +223,24 @@ export function Contact() {
               </div>
             </motion.div>
           </div>
+        </div>
+        )}
+
+        <div className="max-w-xl mx-auto flex justify-center mt-8">
+          <motion.a
+            href="https://wa.me/+201114369970"
+            target="_blank"
+            rel="noopener noreferrer"
+            initial={{ opacity: 0, y: 20 }}
+            animate={isInView ? { opacity: 1, y: 0 } : {}}
+            transition={{ duration: 0.6, delay: 0.2 }}
+            whileHover={{ scale: 1.05 }}
+            whileTap={{ scale: 0.95 }}
+            className="flex items-center gap-3 px-8 py-4 bg-yellow text-yellow-foreground rounded-full font-semibold  transition-colors shadow-lg shadow-[#25D366]/20"
+          >
+            <MessageCircle className="w-6 h-6" />
+            <span className="text-lg">Chat on WhatsApp</span>
+          </motion.a>
         </div>
       </div>
     </section>

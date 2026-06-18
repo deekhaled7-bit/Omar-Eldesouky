@@ -31,7 +31,7 @@ const socialLinks = [
 const navLinks = [
   { name: 'Home', href: '#home' },
   { name: 'Projects', href: '#projects' },
-  { name: 'Experience', href: '#experience' },
+  // { name: 'Experience', href: '#experience' },
   { name: 'Testimonials', href: '#testimonials' },
   { name: 'Contact', href: '#contact' },
 ]
@@ -112,13 +112,13 @@ export function Footer() {
             </h3>
             <ul className="space-y-3 text-muted-foreground">
               <li>
-                <a href="mailto:omar@example.com" className="hover:text-foreground transition-colors">
-                  omar@example.com
+                <a href="mailto:omarwagih95@gmail.com" className="hover:text-foreground transition-colors">
+                  omarwagih95@gmail.com
                 </a>
               </li>
               <li>
-                <a href="tel:+1234567890" className="hover:text-foreground transition-colors">
-                  +1 234 567 890
+                <a href="https://wa.me/+201114369970" target="_blank" rel="noopener noreferrer" className="hover:text-foreground transition-colors">
+                  +20 111 436 9970
                 </a>
               </li>
               <li>Cairo, Egypt</li>

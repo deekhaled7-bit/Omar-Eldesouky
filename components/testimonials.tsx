@@ -7,49 +7,37 @@ import Image from 'next/image'
 
 const testimonials = [
   {
-    id: 1,
-    name: 'Sarah Mitchell',
-    company: 'Fashion Boutique Co.',
-    role: 'CEO',
-    image: '/testimonials/sarah.png',
+    id: 3,
+    name: 'Mariam Solika',
+    company: '',
+    role: 'CEO OF The Good News & The Good Space',
+    image: '/testimonials/Mariam.jpg',
     rating: 5,
-    text: 'Omar transformed our Shopify store completely. His attention to detail and understanding of e-commerce best practices helped us increase conversions by 40%. Highly recommend!',
+    text: `بتفكرني بحديث الرسول عليه افضل الصلاة والسلام : ان الله يحب اذا عمل احدكم عملا ان يتقنه`,
+  },
+  {
+    id: 1,
+    name: 'Fanno Salah Eldin',
+    company: '',
+    role: 'CEO OF Mamilk',
+    image: '/testimonials/Fanno.jpg',
+    rating: 5,
+    text: `I did two websites with Omar Wagih 
+One through shopify and the other was special coding 
+Omar was very very supportive and creative through building the two websites 
+Even the after sale service is more than perfect 
+He is always available for any emergency or inquiry 
+I highly recommend him if anyone is looking for a developer 
+Thank you Omar`,
   },
   {
     id: 2,
-    name: 'Michael Chen',
-    company: 'TechStart Solutions',
-    role: 'CTO',
-    image: '/testimonials/michael.png',
+    name: 'Nareiman Ahmed Hamed',
+    company: '',
+    role: 'CEO OF Wifey For Lifey',
+    image: '/testimonials/Nareiman.jpg',
     rating: 5,
-    text: 'Working with Omar was a fantastic experience. He built our entire SaaS platform from scratch with clean, maintainable code. His fullstack expertise is truly impressive.',
-  },
-  {
-    id: 3,
-    name: 'Emma Rodriguez',
-    company: 'Fitness First Store',
-    role: 'Founder',
-    image: '/testimonials/emma.png',
-    rating: 5,
-    text: 'The custom Shopify Plus store Omar developed for us handles thousands of orders daily without any issues. His expertise in performance optimization is unmatched.',
-  },
-  {
-    id: 4,
-    name: 'David Park',
-    company: 'Creative Agency',
-    role: 'Project Manager',
-    image: '/testimonials/david.png',
-    rating: 5,
-    text: 'Omar delivered our project ahead of schedule and exceeded all expectations. His communication throughout the project was excellent, and the end result speaks for itself.',
-  },
-  {
-    id: 5,
-    name: 'Lisa Thompson',
-    company: 'Beauty Essentials',
-    role: 'Marketing Director',
-    image: '/testimonials/lisa.png',
-    rating: 5,
-    text: 'Our new website has received countless compliments from customers. Omar understood our brand perfectly and created a shopping experience that our customers love.',
+    text: `You've raised my standards in dealing with people.`,
   },
 ]
 
@@ -140,7 +128,7 @@ export function Testimonials() {
                   </div>
 
                   {/* Text */}
-                  <p className="text-base md:text-lg text-foreground leading-relaxed mb-8 italic">
+                  <p className="text-base md:text-lg text-foreground leading-relaxed mb-8 italic whitespace-pre-line">
                     &quot;{testimonial.text}&quot;
                   </p>
                 </div>
@@ -160,7 +148,7 @@ export function Testimonials() {
                       {testimonial.name}
                     </h4>
                     <p className="text-xs md:text-sm text-muted-foreground line-clamp-1">
-                      {testimonial.role} at {testimonial.company}
+                      {testimonial.role}{testimonial.company ? ` at ${testimonial.company}` : ''}
                     </p>
                   </div>
                 </div>
